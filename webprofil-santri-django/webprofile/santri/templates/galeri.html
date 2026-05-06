@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Galeri{% endblock %}
+{% block page_title %}Galeri Karya santri{% endblock %}
+{% block subtitle %}Kumpulan foto & video santri HSI BS{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="box">
+    <h2 class="section-title">Galeri Foto</h2>
+    <div class="gallery">
+      <figure class="gallery-item">
+        <img src="{% static 'images/foto-sma-it-hsi.jpg' %}" alt="Santri HSI BS Angkatan ke-4">
+        <figcaption>Santri HSI BS Angkatan ke-4</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'images/WhatsApp Image 2025-10-05 at 21.03.07_2cad8f1e.jpg' %}" alt="Foto Shiners Club">
+        <figcaption>Foto Shiners Club</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'images/Foto_Halaqoh_Zaid_bin_Tsabit.jpg' %}" alt="Halaqoh Zaid Bin Tsabit">
+        <figcaption>Halaqoh Zaid Bin Tsabit</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'images/foto_diri_sendiri.jpg' %}" alt="Santri">
+        <figcaption>Santri HSI BS</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'images/pemandangan-mlm-hari.jpg' %}" alt="Masjid AR-Rayyan">
+        <figcaption>Masjid AR-RAYYAN</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'images/foto_joging.jpg' %}" alt="Joging">
+        <figcaption>Olahraga sore bersama ustadz</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="box">
+    <h2 class="section-title">Video</h2>
+    <div class="gallery">
+      <div class="gallery-video">
+        <iframe 
+          src="{% static 'images/Vlog_B.ARAB(1).mp4' %}"
+          title="Video 1" 
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="gallery-video">
+        <iframe
+          src="{% static 'images/vlog-2(1).mp4' %}"
+          title="Video 2" 
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

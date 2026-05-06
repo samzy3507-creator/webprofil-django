@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block title %}Feedback{% endblock %}
+{% block page_title %}Formulir Umpan balik{% endblock %}
+{% block subtitle %}kritik, Saran, dan masukan{% endblock %}
+
+{% block content %}
+<body>
+  <div class="container">  
+      <div class="box">
+        
+         <form class="feedback-form">
+            <h2 class="section-title">Formulir Kontak & Saran</h2>
+            <p>berikan masukan terbaik anda untuk pengembangan website ini</p>
+            
+        <!-- action button -->
+        <!-- input: kolom input serbaguna (pendek) -->
+        <!-- tips shortcut: input[type-nya] -->
+        <!-- gunakan clas grid agar jadi kolom -->
+        <div>
+            <label>Nama Lengkap</label>
+            <input placeholder="Nama Lengkap" type="text" name="Nama_Lengkap" id="Nama_Lengkap"/>
+        </div>
+
+        <div>
+            <label for="alamat Email anda">alamat Email anda</label>
+            <input placeholder="email" name="Email" id="alamat Email anda"/>
+        </div>
+        <div>
+            <label for="Rating Kepuasan Website (Skala 1-10)">Rating Kepuasan Website (Skala 1-10)</label>
+            <input placeholder="Rating" type="number" name="Rating Kepuasan Website (Skala 1-10)" id="Rating Kepuasan Website (Skala 1-10)" min="1" max="10" step="1"/>
+        </div>
+        
+            <label>Rekomendasi Website ini?</label>
+        <div class="radio-checkbox">
+            <label for="Sangat">Sangat</label>
+            <input type="radio" name="Mungkin Saja" id="Mungkin Saja"></input>
+            <label for="Mungkin Saja">Mungkin Saja</label>
+            <input type="radio" name="Tidak" id="Tidak"></input>
+            <label for="Tidak">Tidak</label>
+            <input type="radio" name="Tidak" id="Tidak"></input>
+            <br> <br>
+        </div> 
+        
+            <label>Topik Yang Paling Menarik:</label>
+          <div class="radio-checkbox">
+            <input type="checkbox" name="Biodata" id="Biodata">
+            <label for="Biodata">Biodata</label>
+            <input type="checkbox" name="Jadwal" id="Jadwal">
+            <label for="Jadwal">Jadwal</label>
+            <input type="checkbox" name="Galeri" id="Galeri">
+            <label for="Galeri">Galeri</label>
+          </div>
+            <br> <br>
+    
+        <div>
+            <label>Saran pengembangan di Bidang</label>
+            <select>
+                <option disabled>--pilih salah satu--</option>
+                <option value="desain">desain</option>
+                <option value="Konten">Konten</option>
+                <option value="Fitur">Fitur</option>
+            </select>
+            
+        </div>
+        <div>
+            <label>Pesan/saran lengkap:</label>
+            <textarea rows="4" placeholder="Tulis Pesan dan saran Anda di sini" name="pesan" id="pesan" cols="50"></textarea>
+        </div>
+        <br>
+        
+
+                
+        <div class="btn-group">
+            <button type="reset">Batal</button>
+            <button type="submit">Simpan</button>
+        </div>
+        </div>
+        
+                
+
+    </form>
+
+      </div>  
+    
+  </div>      
+</body>
+</html>
+{% endblock %}
+
+
+
+
+
+
+
+ 

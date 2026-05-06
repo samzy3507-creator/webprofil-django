@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block title %}Biodata Santri{% endblock %}
+{% block page_title %}Biodata Santri{% endblock %}
+{% block subtitle %} Kelas 10 A - Asrama Ibnu Katsir{% endblock %}
+
+{% block content %}
+<body>
+    <div class="container">
+          <div class="card">
+            <div class="section-title">Biodata Santri</div>
+          <div class="bio">
+            <img class="avatar" src="{% static 'images/foto-santri-HSI-BS.jpg' %}" height="250px">
+            <p> Assalamu'alaikum perkenalkan name ane Dihyah & ane adalah santri dari HSI Boarding School Purworejo. 
+             Ane menyukai belajar teknologi dan ingin menjadi pribadi yang selalu menebar manfaat bagi orang-orang. 
+            Saat ini saya masih mempelajari HTML & CSS dasar untuk membuat website sederhana.</p>
+         </div>
+        </div>
+          
+        
+        
+          
+
+        <div class="card ">
+        <div class="section-title">Hobi</div>
+        <ul>
+        <li>Berenang</li>
+        <li>Joging pagi</li>
+        <li>Bermain bola</li> 
+        <li>Bermain bola pingpong</li>
+        <li>Hiking</li>
+        </ul>
+           
+       </div>
+       <div class="card">
+       <div class="section-title">Cita-Cita</div>        
+       <ol>
+        <li>Programmer</li>
+        <li>Desainer</li>
+        <li>Pengusaha pakaian muslim</li>
+        <li>Editor Video</li>
+        <li>Traveling</li>
+       </ol>
+       </div>
+       
+       <div class="card">
+       <div class="section-title">Kontak</div>
+       Whatsapp:0851-2671-2485 <br>
+       Instagram :<a href="https://www.instagram.com/dih12108/"> instagram.com/dih12108</a><br>
+       Gmail:samzy3507@gmail.com
+        </div>
+       </div>
+      </body>
+</html>
+{% endblock %}
